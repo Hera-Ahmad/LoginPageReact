@@ -5,6 +5,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const ContactForm = () => {
+const onViaCallSubmit= () => {
+    console.log ("I am from call")
+};
+
   return (
     <section className={styles.container}>
       <div className={styles.contact_form}>
@@ -13,7 +17,11 @@ const ContactForm = () => {
             text="VIA SUPPORT CHAT"
             icon={<MdMessage fontSize="24px" />}
           />
-          <Button text="VIA CALL" icon={<FaPhoneAlt fontSize="24px" />} />
+          button
+          
+          <Button 
+          on Click={onViaCallSubmit}
+          text="VIA CALL" icon={<FaPhoneAlt fontSize="24px" />} />
         </div>
 
         <Button
@@ -35,7 +43,8 @@ const ContactForm = () => {
 
           <div className={styles.form_control}>
             <label htmlFor="text">Text</label>
-            <textarea name="text" />
+            <textarea name="text" rows="8" />
+
           </div>
 
           <div className="submit" style={{
@@ -46,7 +55,9 @@ const ContactForm = () => {
         </form>
       </div>
 
-      <div className={styles.contact_Image}></div>
+      <div className={styles.contact_Image}>
+        <img src="hero.png" alt="contact-image" />
+      </div>
     </section>
   );
 };
