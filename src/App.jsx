@@ -1,12 +1,13 @@
-import './App.css';
-import contactHeader from "./components/contactHeader/contactHeader:";
+import "./App.css";
+
+import ContactHeader from "./components/contactheader/ContactHeader";
 import Navigation from "./components/Navigation/Navigation";
 
 function App() {
 return (
     <div>
         <Navigation/>
-        <contactHeader/>
+        <ContactHeader/>
     </div>
 );
 };
