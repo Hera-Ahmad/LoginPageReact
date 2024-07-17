@@ -1,6 +1,6 @@
 import "./App.css";
 
-import ContactHeader from "./components/contactheader/ContactHeader";
+import ContactHeader from "./components/Contactheader/ContactHeader";
 import Navigation from "./components/Navigation/Navigation";
 
 function App() {
