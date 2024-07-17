@@ -1,5 +1,5 @@
 import "./App.css";
-
+import ContactForm from "./components/ContactForm/ContactForm";
 import ContactHeader from "./components/Contactheader/ContactHeader";
 import Navigation from "./components/Navigation/Navigation";
 
@@ -8,6 +8,7 @@ return (
     <div>
         <Navigation/>
         <ContactHeader/>
+        <ContactForm/>
     </div>
 );
 };
